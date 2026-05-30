@@ -1,0 +1,460 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #080808;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+.hero {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.85)),
+    url("images/hero-studio.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 8%;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 28px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  letter-spacing: 4px;
+  font-weight: bold;
+  color: #d4af37;
+}
+
+.nav-btn,
+.btn,
+.whatsapp {
+  text-decoration: none;
+  color: #080808;
+  background: #d4af37;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.hero-content {
+  max-width: 850px;
+}
+
+.eyebrow,
+.section-label {
+  color: #d4af37;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: clamp(48px, 9vw, 120px);
+  line-height: .95;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: clamp(32px, 5vw, 60px);
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.hero-text,
+.section-subtitle {
+  max-width: 720px;
+  color: #cfcfcf;
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+.section {
+  padding: 110px 8%;
+  background: #f4f1ea;
+  color: #111;
+}
+
+.section.dark {
+  background: #080808;
+  color: #fff;
+}
+
+.cards {
+  display: grid;
+  gap: 24px;
+  margin-top: 45px;
+}
+
+.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card,
+.price-card,
+.pricing-box,
+.allies div,
+.equipment div {
+  background: #fff;
+  color: #111;
+  padding: 35px;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.12);
+}
+
+.dark .card,
+.dark .price-card,
+.dark .equipment div {
+  background: #131313;
+  color: #fff;
+  border: 1px solid #252525;
+}
+
+.featured,
+.premium {
+  border: 1px solid #d4af37;
+  transform: translateY(-12px);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.dark li {
+  color: #ccc;
+}
+
+.price {
+  color: #d4af37;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.price-card span {
+  color: #aaa;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.tag {
+  display: inline-block;
+  background: #d4af37;
+  color: #080808;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.pricing-grid,
+.equipment,
+.allies,
+.benefits {
+  display: grid;
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.pricing-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.equipment {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.allies {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.benefits {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.benefits span {
+  border: 1px solid #333;
+  padding: 22px;
+  border-radius: 20px;
+  background: #121212;
+  color: #e8e8e8;
+}
+
+/* PRODUCCIÓN MUSICAL */
+
+.recording-section {
+  min-height: 750px;
+  background:
+    linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+    url("images/recording.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 120px 8%;
+  color: white;
+}
+
+.recording-section .overlay {
+  max-width: 700px;
+}
+
+.recording-section h2 {
+  font-size: clamp(48px, 7vw, 110px);
+  line-height: .95;
+  margin-bottom: 28px;
+}
+
+.recording-section p {
+  max-width: 680px;
+  font-size: 22px;
+  color: #e8e8e8;
+}
+
+.recording-section .section-label {
+  color: #d4af37;
+  letter-spacing: 8px;
+  margin-bottom: 24px;
+}
+
+/* ACÚSTICA */
+
+.acoustic-section {
+  min-height: 800px;
+  background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+    url("images/control-room.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 120px 8%;
+  color: white;
+  position: relative;
+}
+
+.acoustic-section .content {
+  max-width: 700px;
+  z-index: 2;
+}
+
+.acoustic-actions {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+  z-index: 3;
+}
+
+.studio-stat {
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(12px);
+  padding: 25px 35px;
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,.12);
+  width: 300px;
+}
+
+.studio-stat span {
+  display: block;
+  font-size: 60px;
+  font-weight: 900;
+  color: #d4af37;
+}
+
+.studio-stat p {
+  margin-top: 10px;
+  color: white;
+  font-size: 15px;
+}
+
+/* FONDO SOLO PARA NUESTROS EQUIPOS */
+
+.equipment-background {
+  background:
+    linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.45)),
+    url("./images/equipment.png") !important;
+
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.equipment-background .equipment div {
+
+  background: rgba(15,15,15,.65);
+
+  backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+/* FOOTER */
+
+footer {
+  background: #d4af37;
+  color: #080808;
+  text-align: center;
+  padding: 90px 8%;
+}
+
+footer h2 {
+  margin-bottom: 15px;
+}
+
+footer p {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.whatsapp {
+  display: inline-block;
+  margin-top: 25px;
+  background: #080808;
+  color: #fff;
+}
+
+/* ANIMACIONES */
+
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all .8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .three,
+  .pricing-grid,
+  .equipment,
+  .allies,
+  .benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .featured,
+  .premium {
+    transform: none;
+  }
+
+  .hero {
+    padding-top: 120px;
+  }
+
+  .acoustic-actions {
+    position: static;
+    transform: none;
+    margin-top: 35px;
+    flex-wrap: wrap;
+  }
+
+  .studio-stat {
+    width: 100%;
+  }
+}
+body::before {
+
+  content: "";
+
+  position: fixed;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  opacity: .06;
+
+  z-index: 9999;
+
+  background-image:
+  repeating-radial-gradient(
+    circle at 0 0,
+    transparent 0,
+    rgba(255,255,255,.15) 1px,
+    transparent 2px
+  );
+
+  background-size: 6px 6px;
+}
+@media (max-width: 768px) {
+
+  .hero {
+    background-size: 260%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    box-shadow:
+      inset 0 0 150px rgba(0,0,0,.25),
+      inset 0 0 250px rgba(0,0,0,.25);
+  }
+
+}
+@media (max-width: 768px) {
+
+  .hero-content {
+
+    padding: 20px;
+
+    background: rgba(0,0,0,.03);
+
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+
+    border-radius: 18px;
+  }
+
+}
